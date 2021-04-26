@@ -1,0 +1,60 @@
+{
+  "env": {
+    "es2020": true,
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+  "globals": {
+    "browser": true,
+    "driver": true,
+    "$": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "rules": {
+    "no-console": "warn",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 110
+      }
+    ],
+    "indent": [
+      "error",
+      4
+    ],
+    "arrow-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "array-bracket-newline": [
+      "error",
+      "always"
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "config/wdio.conf.js"
+      ],
+      "rules": {
+        "max-len": [
+          "error",
+          {
+            "code": 130
+          }
+        ]
+      }
+    }
+  ]
+}

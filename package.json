@@ -1,0 +1,41 @@
+{
+  "name": "Wdio7-appium-cucumber",
+  "version": "1.0.0",
+  "description": "Boilerplate project to run native and browser for android and ios using cucumber with page object pattern",
+  "scripts": {
+    "android": "wdio ./config/android.config.js",
+    "ios": "wdio ./config/ios.config.js",
+    "androidBrowser": "wdio ./config/androidBrowser.config.js",
+    "iosBrowser": "wdio ./config/iosBrowser.config.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "Appium",
+    "cucumber",
+    "webdriverio",
+    "wdio",
+    "mobile automation",
+    "native apps",
+    "mobile browser"
+  ],
+  "author": "Arjun Annamalai - arjun1120@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/appium-service": "^7.5.2",
+    "@wdio/cli": "^7.5.2",
+    "@wdio/cucumber-framework": "^7.5.2",
+    "@wdio/local-runner": "^7.5.2",
+    "@wdio/mocha-framework": "^7.5.2",
+    "@wdio/spec-reporter": "^7.5.2",
+    "@wdio/sync": "^7.5.2",
+    "chromedriver": "^90.0.0",
+    "eslint": "^7.3.0",
+    "wdio-chromedriver-service": "^7.0.0",
+    "@cucumber/cucumber": "^7.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "multiple-cucumber-html-reporter": "^1.16.2",
+    "wdio-cucumberjs-json-reporter": "^2.0.2"
+  }
+}
